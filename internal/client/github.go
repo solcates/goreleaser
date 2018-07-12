@@ -14,6 +14,7 @@ import (
 )
 
 type githubClient struct {
+	client *github.Client
 }
 
 // NewGitHub returns a github client implementation
