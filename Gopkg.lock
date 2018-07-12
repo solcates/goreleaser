@@ -209,6 +209,12 @@
   version = "v1.2.2"
 
 [[projects]]
+  name = "github.com/xanzy/go-gitlab"
+  packages = ["."]
+  revision = "79dad8e74fd097eb2e0fd0883f1978213e88107a"
+  version = "v0.10.7"
+
+[[projects]]
   branch = "master"
   name = "golang.org/x/net"
   packages = [
@@ -261,6 +267,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "f8fe5bd56d1929f1592ca556cb199eec1d49bbc99d1b1cd5796a9a2be7d6bb22"
+  inputs-digest = "38d28fc32ef3fc1eb3764b0abd4dc821c69886ab7c226d9bc6b0671b506aa85f"
   solver-name = "gps-cdcl"
   solver-version = 1
