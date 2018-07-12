@@ -19,6 +19,12 @@ type GitHubURLs struct {
 	Download string `yaml:"download,omitempty"`
 }
 
+type GitLabURLs struct {
+	API      string `yaml:"api,omitempty"`
+	Upload   string `yaml:"upload,omitempty"`
+	Download string `yaml:"download,omitempty"`
+}
+
 // Repo represents any kind of repo (github, gitlab, etc)
 type Repo struct {
 	Owner string `yaml:",omitempty"`
@@ -322,6 +328,10 @@ type Project struct {
 
 	// should be set if using github enterprise
 	GitHubURLs GitHubURLs `yaml:"github_urls,omitempty"`
+
+	// should be set if using gitlab self-hosted
+	GitLabURLs GitLabURLs `yaml:"gitlab_urls,omitempty"`
+
 }
 
 // Load config file
